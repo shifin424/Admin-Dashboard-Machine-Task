@@ -20,7 +20,6 @@ function Sidebar() {
         <NavLink to="/customers" icon={HiUsers} label="Customers" />
         <NavLink to="/users" icon={FaUsers} label="Users" />
       </div>
-
       <LogoutButton />
     </div>
   );
