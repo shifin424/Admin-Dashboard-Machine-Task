@@ -1,13 +1,14 @@
 import React from 'react';
 import Header from './Header';
 import NavLink from './NavLink';
-import LogoutButton from './LogoutButton';
+import Button from './Button';
 import { CgMenuRightAlt } from "react-icons/cg";
 import { FaUser } from "react-icons/fa";
 import { HiUsers } from "react-icons/hi";
 import { FaUsers } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { MdPlayArrow } from "react-icons/md";
+import { IoPowerSharp } from "react-icons/io5";
 
 function Sidebar() {
   return (
@@ -20,7 +21,7 @@ function Sidebar() {
         <NavLink to="/customers" icon={HiUsers} label="Customers" />
         <NavLink to="/users" icon={FaUsers} label="Users" />
       </div>
-      <LogoutButton />
+      <Button onClick={() => console.log('Logout clicked')} Icon={IoPowerSharp} label="Log out" />
     </div>
   );
 }

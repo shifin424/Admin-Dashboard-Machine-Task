@@ -4,6 +4,8 @@ import NavBar from "../../Components/NavBar";
 import background from "../../assets/Images/background.png";
 import DashboardHeader from "../../Components/DashboardHeader";
 import Dashboard from "../../Components/Dashboard";
+import DashboardDataLists from "../../Components/DashboardDataLists";
+
 
 function AdminDashboard() {
     return (
@@ -16,6 +18,7 @@ function AdminDashboard() {
                 <NavBar />
                 <DashboardHeader/>
                 <Dashboard/>
+                <DashboardDataLists/>
             </div>
         </div>
     );
