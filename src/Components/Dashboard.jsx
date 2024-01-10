@@ -1,6 +1,6 @@
 import React from "react";
 import backgroundImageUrl from "../assets/Images/background-invoice.png";
-import DashboardButton from "./DashboardButton";
+import { HiUsers } from "react-icons/hi";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
 
@@ -46,25 +46,29 @@ function Dashboard() {
                 </div>
             </div>
 
-            <div className="flex mt-4  mr-[48rem]">
-                <DashboardButton
-                    icon={HiOutlineDocumentText}
-                    label="Create Invoice"
+            <div className="flex flex-col mt-4 md:flex-row ml-8 md:mr-[48rem]">
+                <button
                     onClick={() => {
-                        console.log("clicked btn 1")
+                        console.log("clicked btn 1");
                     }}
-                    className="bg-[#1ea5d6] hover:bg-[#51cffc] text-white p-2 rounded w-full flex items-center ml-9 justify-center"
-                />
-                 <HiOutlineDocumentText/>
-                <DashboardButton
-                    label="Add Customer"
+                    className="bg-[#1ea5d6] hover:bg-[#51cffc] text-white p-2 text-sm rounded w-[10rem]  mb-2 md:mb-0 md:mr-2 flex items-center ml-9 justify-center"
+                >
+                    Create Invoice
+                    <HiOutlineDocumentText className="ml-2" />
+                </button>
+
+                <button
                     onClick={() => {
-                        console.log("clicked btn 2")
+                        console.log("clicked btn 2");
                     }}
-                    className="bg-[#1ea5d6] hover:bg-[#51cffc] text-white p-2 rounded w-full flex items-center ml-9 justify-center"
-                />
+                    className="bg-[#1ea5d6] hover:bg-[#51cffc] text-white p-2 rounded text-sm w-[10rem] flex items-center ml-4 justify-center"
+                >
+                    Add Customer
+                    <HiUsers className="ml-2" />
+                </button>
             </div>
         </div>
+
     );
 }
 

@@ -8,7 +8,6 @@ import { HiUsers } from "react-icons/hi";
 import { FaUsers } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { MdPlayArrow } from "react-icons/md";
-import { IoPowerSharp } from "react-icons/io5";
 
 function Sidebar() {
   return (
@@ -21,7 +20,7 @@ function Sidebar() {
         <NavLink to="/customers" icon={HiUsers} label="Customers" />
         <NavLink to="/users" icon={FaUsers} label="Users" />
       </div>
-      <Button onClick={() => console.log('Logout clicked')} Icon={IoPowerSharp} label="Log out" />
+      <Button onClick={() => console.log('Logout clicked')}  label="Log out" />
     </div>
   );
 }
