@@ -3,7 +3,6 @@ import backgroundImageUrl from "../assets/Images/background-invoice.png";
 import { HiUsers } from "react-icons/hi";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
-
 function Dashboard() {
     const containerStyle = {
         backgroundImage: `url(${backgroundImageUrl})`,
@@ -15,10 +14,7 @@ function Dashboard() {
         <div className="flex flex-col items-center mt-5">
             <div className="flex">
                 <div className="h-72 w-96 rounded overflow-hidden">
-                    <div
-                        className="text-white h-full rounded  flex flex-col justify-evenly"
-                        style={containerStyle}
-                    >
+                    <div className="text-white h-full rounded  flex flex-col justify-evenly" style={containerStyle}>
                         <span className="text-md ml-10 mt-5">Number of Paid Leaves</span>
                         <span className="text-2xl font-bold ml-10">324</span>
                         <span className="text-md ml-10">Value of Paid Invoices</span>
@@ -51,7 +47,8 @@ function Dashboard() {
                     onClick={() => {
                         console.log("clicked btn 1");
                     }}
-                    className="bg-[#1ea5d6] hover:bg-[#51cffc] text-white p-2 text-sm rounded w-[10rem]  mb-2 md:mb-0 md:mr-2 flex items-center ml-9 justify-center"
+                    className="bg-[#1ea5d6] hover:bg-[#51cffc] text-white p-2 text-sm rounded
+                     w-[10rem]  mb-2 md:mb-0 md:mr-2 flex items-center ml-9 justify-center"
                 >
                     Create Invoice
                     <HiOutlineDocumentText className="ml-2" />
@@ -61,14 +58,14 @@ function Dashboard() {
                     onClick={() => {
                         console.log("clicked btn 2");
                     }}
-                    className="bg-[#1ea5d6] hover:bg-[#51cffc] text-white p-2 rounded text-sm w-[10rem] flex items-center ml-4 justify-center"
+                    className="bg-[#1ea5d6] hover:bg-[#51cffc] text-white p-2 rounded text-sm w-[10rem]
+                     flex items-center ml-4 justify-center"
                 >
                     Add Customer
                     <HiUsers className="ml-2" />
                 </button>
             </div>
         </div>
-
     );
 }
 
