@@ -3,8 +3,8 @@ import React from "react";
 function DashboardDataLists() {
     return (
         <div>
-            <div className="flex">
-                <div className="mt-4 bg-white rounded w-[22rem] mr-[4rem] ml-[7rem] h-28 p-3">
+            <div className="flex justify-center">
+                <div className="mt-4 bg-white rounded w-[22rem] ml-3  h-28 p-3">
                     <h1 className="text-[#48add2] font-semibold ml-5 mb-1">Today's Invoice</h1>
                     <div className="bg-gray-200 ">
                         <span className="text-xs ml-5">Payment Ref</span>
@@ -14,8 +14,8 @@ function DashboardDataLists() {
                     <span className="text-xs ml-[6.5rem]">No Data Found</span>
                     <hr className="border-2 border-solid text-black font-bold mt-2" />
                 </div>
-                <div className="mt-4 w-[41rem]  bg-white p-3">
-                    <h1 className="text-[#48add2] font-semibold ml-5 mb-1">Today's Paid Invoice</h1>
+                <div className="mt-4 w-[41rem] ml-16  bg-white p-3">
+                    <h1 className="text-[#48add2] font-semibold  mb-1">Today's Paid Invoice</h1>
                     <div className="bg-gray-200 flex h-5 justify-around">
                         <span className="text-xs ">Payment Ref</span>
                         <span className="text-xs ">Invoice Value</span>
